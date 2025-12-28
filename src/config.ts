@@ -15,7 +15,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/Ei-Sandi/eisandi.github.io/edit/main/",
+    url: "https://github.com/Ei-Sandi/ei-sandi.github.io/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
