@@ -1,11 +1,12 @@
 ---
 layout: ../layouts/AboutLayout.astro
 ---
+
 ## My Story
 
 It started with a decision to change everything and the resilience to keep going when it didn't go to plan.
 
-In 2022, I walked away from **medical school** in Burma to chase a different kind of precision. My initial path was blocked: I applied to the US and faced **three consecutive visa rejections**. 
+In 2022, I walked away from **medical school** in Burma to chase a different kind of precision. My initial path was blocked: I applied to the US and faced **three consecutive visa rejections**.
 
 Most would have stopped there. I didn't.
 
@@ -15,10 +16,12 @@ Today, I'm not just catching up; I'm pushing the edge—building Zero Knowledge 
 
 I traded a stethoscope for a keyboard, but the goal remains the same: to solve complex problems that matter.
 
---- 
+---
+
 ## Past Experience
 
 ### MLH Fellowship
+
 **Midnight | Oct 2025 – Dec 2025**
 
 I moved houses three times in 2025. Every single time, I faced the same awkward privacy nightmare: to secure a monthly payment plan, I either had to pay a year's rent upfront or ask friends to share their payslips, exposing their sensitive financial data to total strangers. **I hated it.**
@@ -27,8 +30,8 @@ That frustration drove me to build a prototype at the Midnight x MLH Hackathon. 
 
 I am incredibly grateful to the Midnight team for seeing the potential in my hackathon project and giving me the resources to build it. Thank you for teaching me that **privacy isn't just a feature; it's a right.**
 
-
 ### SDE Intern
+
 **Amazon, Cambridge | April 2025 – July 2025**
 
 There is 'coding,' and then there is **'engineering at Amazon scale.'**

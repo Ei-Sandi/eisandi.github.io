@@ -8,7 +8,6 @@ import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
 import Hr from "@/components/Hr.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
-import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
@@ -25,30 +24,40 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <main id="main-content" data-layout="index">
     <section id="hero" class="pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Welcome To My Portfolio ! 
+        Welcome To My Portfolio !
       </h1>
 
       <p>
-        Hi, I am Ei Sandi Aung (Sandi), a final-year Computer Science student with a passion 
-        for Backend Systems, DevOps, Cloud Infrastructure, AI and Web3/Blockchain. 
+        Hi, I am Ei Sandi Aung (Sandi), a final-year Computer Science student
+        with a passion for Backend Systems, DevOps, Cloud Infrastructure, AI and
+        Web3/Blockchain.
       </p>
-      <br>
+      <br />
       <p>
-        I am enthusiastic about learning new technologies and building products that matter. 
-        I learn most by trying to solve complex problems. I thrive in high-pressure environments.
+        I am enthusiastic about learning new technologies and building products
+        that matter. I learn most by trying to solve complex problems. I thrive
+        in high-pressure environments.
       </p>
-      <br>
-      <p> Last summer at Amazon was the turning point of my career. I shipped an SQS partitioning 
-      feature, to production but the real win was learning how good systems are architected. 
-      Working alongside the brightest engineers taught me that design decisions matter more than 
-      just writing code. I carried that energy into the MLH Fellowship (which I entered after a 
-      hackathon win), where I built a privacy-preserving income verification app up to production quality.
-      </p>
-      <br>
+      <br />
       <p>
-        This is just a glimpse of my journey. To dive deeper into my engineering philosophy, 
-        the lessons I've learned, and my motivation for the future, check out my 
-        <a href="/about" class="underline hover:text-skin-accent decoration-dashed underline-offset-4">About Me</a>
+        Last summer at Amazon was the turning point of my career. I shipped an
+        SQS partitioning feature, to production but the real win was learning
+        how good systems are architected. Working alongside the brightest
+        engineers taught me that design decisions matter more than just writing
+        code. I carried that energy into the MLH Fellowship (which I entered
+        after a hackathon win), where I built a privacy-preserving income
+        verification app up to production quality.
+      </p>
+      <br />
+      <p>
+        This is just a glimpse of my journey. To dive deeper into my engineering
+        philosophy, the lessons I've learned, and my motivation for the future,
+        check out my
+        <a
+          href="/about"
+          class="hover:text-skin-accent underline decoration-dashed underline-offset-4"
+          >About Me</a
+        >
         page.
       </p>
       {

@@ -9,6 +9,7 @@ Welcome to the repository for my personal portfolio and blog. This site is built
 I am a final-year Computer Science student at **Coventry University** (Predicted 1:1) and an incoming Software Engineer. My work focuses on **Backend Systems**, **Web3**, and **AI**, bridging the gap between scalable infrastructure and privacy-preserving applications.
 
 ## 💼 My Past Experience
+
 **Amazon**: Spent my summer with the S3 team working on blast radius reduction learning what a real software engineering looks like.
 
 **MLH Fellowship**: Dived deep into Web3 privacy on the Midnight track, engineering Zero Knowledge Proof systems to verify income without revealing data.
@@ -18,21 +19,24 @@ I am a final-year Computer Science student at **Coventry University** (Predicted
 ## 🛠️ Tech Stack
 
 This portfolio uses:
-* **Framework:** [Astro](https://astro.build/)
-* **Styling:** Tailwind CSS
-* **Deployment:** GitHub Actions
+
+- **Framework:** [Astro](https://astro.build/)
+- **Styling:** Tailwind CSS
+- **Deployment:** GitHub Actions
 
 My technical toolkit includes:
-* **Languages:** Java, Python, TypeScript, JavaScript, SQL.
-* **Core Technologies:** React, Node.js, AWS, Web3/Blockchain, Distributed Systems, CI/CD.
+
+- **Languages:** Java, Python, TypeScript, JavaScript, SQL.
+- **Core Technologies:** React, Node.js, AWS, Web3/Blockchain, Distributed Systems, CI/CD.
 
 ## 📫 Contact
 
 I am actively looking for **Graduate Software Engineer, Junior Software Engineer, DevOps Engineer** roles for 2026.
 
-* **Email:** eisandiaung.esa@gmail.com 
-* **Location:** Coventry, UK 
-* **LinkedIn:** https://www.linkedin.com/in/ei-sandi-aung-8a86aa2a2/
+- **Email:** eisandiaung.esa@gmail.com
+- **Location:** Coventry, UK
+- **LinkedIn:** https://www.linkedin.com/in/ei-sandi-aung-8a86aa2a2/
 
 ---
-*Built with ❤️ and Astro by Ei Sandi Aung © 2025*
+
+_Built with ❤️ and Astro by Ei Sandi Aung © 2025_
