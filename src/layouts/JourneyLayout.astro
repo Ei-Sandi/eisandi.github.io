@@ -1,0 +1,109 @@
+---
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Layout from "./Layout.astro";
+import { SITE } from "@/config";
+
+export interface Props {
+  frontmatter: {
+    title: string;
+    description?: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={`${frontmatter.title} | ${SITE.title}`}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content">
+    <section id="journey" class="app-prose mb-28 max-w-app prose-img:border-0">
+      <h1 class="mt-0 mb-12 text-3xl font-bold tracking-tight sm:text-4xl">
+        {frontmatter.title}
+      </h1>
+      <slot />
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style is:global>
+  @reference "../styles/global.css";
+
+  /* 1. Container & Typography */
+  #journey {
+    @apply relative mx-auto max-w-3xl px-6 pt-0 pb-12;
+  }
+
+  .app-prose p {
+    @apply mb-8 text-lg leading-relaxed text-gray-700 dark:text-gray-300;
+  }
+
+  /* 2. Highlighting Key Achievements */
+  .app-prose strong {
+    @apply font-semibold text-foreground transition-colors hover:text-accent;
+  }
+
+  /* 3. Section Headings */
+  .app-prose h2 {
+    @apply mt-20 mb-10 text-3xl font-bold tracking-tight text-foreground sm:text-4xl;
+    @apply flex items-center gap-4;
+  }
+
+  .app-prose h2::after {
+    content: "";
+    @apply h-px flex-1 bg-border;
+  }
+
+  /* 4. Experience Cards (H3 sections) */
+  .app-prose h3 {
+    @apply mt-12 mb-2 text-2xl font-bold text-accent;
+  }
+
+  /* Target the paragraph immediately following H3 (the location/date) */
+  .app-prose h3 + p {
+    @apply -mt-1 mb-6 text-sm font-medium tracking-wide text-gray-500 uppercase dark:text-gray-400;
+  }
+
+  /* 5. Timeline Effect for Experience */
+  #journey {
+    @apply border-l-2 border-dashed border-border/50 pl-8 sm:pl-12;
+  }
+
+  /* Add dots to the timeline for H2 and H3 */
+  .app-prose h2,
+  .app-prose h3 {
+    @apply relative;
+  }
+
+  .app-prose h2::before {
+    content: "";
+    @apply absolute top-1/2 -left-[40px] size-4 -translate-y-1/2 rounded-full border-4 border-background bg-accent sm:-left-[56px];
+  }
+
+  .app-prose h3::before {
+    content: "";
+    @apply absolute top-1/2 -left-[38px] size-3 -translate-y-1/2 rounded-full border-2 border-background bg-border sm:-left-[54px];
+  }
+
+  /* 6. Horizontal Rule Styling */
+  .app-prose hr {
+    @apply my-16 h-px border-none bg-gradient-to-r from-transparent via-border to-transparent;
+  }
+
+  /* 7. Blockquote/Callout feel for specific paragraphs */
+  .app-prose p em {
+    @apply font-medium text-accent not-italic;
+  }
+
+  .app-prose blockquote {
+    @apply my-8 rounded-r-lg border-l-4 border-accent bg-accent/5 py-2 pl-6 text-xl text-foreground italic;
+  }
+
+  /* 8. Image Styling */
+  .app-prose img {
+    @apply my-12 rounded-2xl border-4 border-background shadow-2xl ring-1 ring-border;
+  }
+</style>
